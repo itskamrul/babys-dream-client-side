@@ -1,0 +1,9 @@
+.btn-regular {
+  text-decoration: none;
+  background-color: #cf102d;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}

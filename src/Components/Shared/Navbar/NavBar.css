@@ -1,0 +1,21 @@
+.navbar-container {
+  background-color: #cf102d;
+}
+.logo {
+  height: 50px;
+}
+.navbar-container a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar-container li {
+  color: #fff;
+  list-style: none;
+}
+.button {
+  background-color: #ffffff;
+  color: #cf102d;
+  font-weight: bold;
+  border: none;
+}
