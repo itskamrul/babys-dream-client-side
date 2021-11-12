@@ -9,7 +9,6 @@ import {
 import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import loginImage from '../../images/login.png';
-import googleImage from '../../images/google.png';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 const Register = () => {
