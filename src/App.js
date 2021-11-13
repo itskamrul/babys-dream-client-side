@@ -6,11 +6,11 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import OrderDetails from './Components/OrderDetails/OrderDetails';
 import Register from './Components/Register/Register';
-import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import Home from './Components/Pages/Home/Home/Home';
 import Explore from './Components/Pages/Explore/Explore/Explore';
 import NavBar from './Components/Shared/Navbar/NavBar';
 import Footer from './Components/Shared/Footer/Footer';
+import Dashboard from './Components/Pages/Dashboard/Dashboard/Dashboard';
 
 function App() {
   return (
