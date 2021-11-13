@@ -7,12 +7,14 @@ const GetReview = () => {
   const onSubmit = data => {
     console.log(data);
 
-    axios.post('http://localhost:5000/getReview', data).then(res => {
-      if (res.data.insertedId) {
-        alert('added successfully');
-        reset();
-      }
-    });
+    axios
+      .post('https://agile-brushlands-55686.herokuapp.com/getReview', data)
+      .then(res => {
+        if (res.data.insertedId) {
+          alert('added successfully');
+          reset();
+        }
+      });
   };
   return (
     <div>

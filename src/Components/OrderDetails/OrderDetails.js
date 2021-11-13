@@ -12,7 +12,7 @@ const OrderDetails = () => {
   const { productId } = useParams();
   //get data
   useEffect(() => {
-    fetch('http://localhost:5000/products')
+    fetch('https://agile-brushlands-55686.herokuapp.com/products')
       .then(res => res.json())
       .then(data => setProducts(data));
   }, [isSubmit]);
@@ -31,7 +31,10 @@ const OrderDetails = () => {
     displayProuduct._id = displayProuduct._id + 1;
 
     axios
-      .post('http://localhost:5000/bookingProduct', displayProuduct)
+      .post(
+        'https://agile-brushlands-55686.herokuapp.com/bookingProduct',
+        displayProuduct
+      )
       .then(res => {
         if (res.data.insertedId) {
           alert('Order successfully');

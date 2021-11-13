@@ -98,7 +98,7 @@ const useFirebase = () => {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${users.email}`)
+    fetch(`https://agile-brushlands-55686.herokuapp.com/users/${users.email}`)
       .then(res => res.json())
       .then(data => {
         setAdmin(data.admin);
@@ -116,7 +116,7 @@ const useFirebase = () => {
 
   const saveUser = (email, displayName, method) => {
     const user = { email, displayName };
-    fetch('http://localhost:5000/users', {
+    fetch('https://agile-brushlands-55686.herokuapp.com/users', {
       method: method,
       headers: {
         'content-type': 'application/json',

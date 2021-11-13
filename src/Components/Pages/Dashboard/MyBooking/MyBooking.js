@@ -12,7 +12,7 @@ const MyBooking = () => {
 
   //get data
   useEffect(() => {
-    fetch(`http://localhost:5000/myBooking/${email}`)
+    fetch(`https://agile-brushlands-55686.herokuapp.com/myBooking/${email}`)
       .then(res => res.json())
       .then(data => {
         setBookings(data);
@@ -24,12 +24,15 @@ const MyBooking = () => {
   const handleDelete = id => {
     const handleConfirm = window.confirm('Are you sure to delete');
     if (handleConfirm) {
-      fetch(`http://localhost:5000/deleteBooking/${id}`, {
-        method: 'DELETE',
-        headers: {
-          'content-type': 'application/json',
-        },
-      })
+      fetch(
+        `https://agile-brushlands-55686.herokuapp.com/deleteBooking/${id}`,
+        {
+          method: 'DELETE',
+          headers: {
+            'content-type': 'application/json',
+          },
+        }
+      )
         .then(res => res.json())
         .then(result => {
           if (result.deletedCount) {
