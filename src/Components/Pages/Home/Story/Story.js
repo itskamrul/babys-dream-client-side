@@ -14,7 +14,7 @@ const Story = () => {
         <Row className="g-2">
           <Col md={6}>
             <img
-              className=" rounded-2"
+              className=" rounded-2 img-fluid"
               style={{ width: '550px' }}
               src="https://hmadmin.hostx1.de/cms_images/1620133789Spreading-the-joy.jpg"
               alt=""
@@ -47,7 +47,7 @@ const Story = () => {
           </Col>
           <Col md={6}>
             <img
-              className=" rounded-2"
+              className=" rounded-2 img-fluid"
               style={{ width: '550px' }}
               src="https://hmadmin.hostx1.de/cms_images/1620133809A-delightful-experience.jpg"
               alt=""
